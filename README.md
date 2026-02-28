@@ -1,8 +1,8 @@
 # yc-cli
 
-###Используя Ya CLI, написать скрипт используя bash для создания инфраструктуры, аналогичной созданной в прошлом занятии.
+### Используя Ya CLI, написать скрипт используя bash для создания инфраструктуры, аналогичной созданной в прошлом занятии.
 
-####Подготовка:
+#### Подготовка:
 ```
 $ yc init
 Welcome! This command will take you through the configuration process.
@@ -30,7 +30,7 @@ Your profile default Compute zone has been set to 'ru-central1-d'.
 u24@Ubuntu22:~$
 u24@Ubuntu22:~$ yc vpc network --help
 ```
-####Скрипт:
+#### Скрипт:
 ```
 u24@Ubuntu22:~$ yc vpc network create \
 > --name internal-bastion-network \
