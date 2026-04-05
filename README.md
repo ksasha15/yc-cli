@@ -32,10 +32,9 @@ u24@Ubuntu22:~$ yc vpc network --help
 ```
 #### Скрипт:
 ```
-u24@Ubuntu22:~$ yc vpc network create \
-> --name internal-bastion-network \
+u24@Ubuntu22:~$ yc vpc network create --name internal-bastion-network 
 yc vpc subnet create --name internal-bastion-subnet --range 172.16.16.0/24 --network-name internal-bastion-network
-yc vpc network create --name external-bastion-network \ 
+yc vpc network create --name external-bastion-network 
 yc vpc subnet create --name external-bastion-subnet --range 192.168.0.0/24 --network-name external-bastion-network
 yc compute instance create --name bastion --network-interface subnet-name=external-bastion-subnet,nat-ip-version=ipv4 --zone ru-central1-d --ssh-key ~/.ssh/ssh-key-1771855316608.pub
 ```
